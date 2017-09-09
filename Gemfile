@@ -10,3 +10,5 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 
 gem 'slim'
 gem 'jquery-middleman'
+
+gem 'bourbon'
