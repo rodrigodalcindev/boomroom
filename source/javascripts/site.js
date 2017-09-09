@@ -1,1 +1,3 @@
-// This is where it all goes :)
+//= require jquery
+//= require ./vendor/audiojs/audio.min
+//= require app
