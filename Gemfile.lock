@@ -125,4 +125,4 @@ DEPENDENCIES
   middleman-sprockets
   slim
   tzinfo-data
-  wdm (~> 0.1)
+  wdm (~> 0.1.0)
