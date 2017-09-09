@@ -1,15 +1,15 @@
 .s-home--container
   height: 100vh
 
-  .img,
-  .info
+  div[class*="content"]
     height: 100%
     width: 50%
 
-  .img
+  .content--img
     background: url('/images/zaman-brandon.jpg') no-repeat center
     background-size: cover
 
-  .info
-    align-items: center
+  .content--info
     display: flex
+    flex-direction: column
+    justify-content: center
