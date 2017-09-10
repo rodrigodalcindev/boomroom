@@ -12,6 +12,14 @@
     h1
       cursor: pointer
 
+    i
+      transition: transform 0.75 ease-in
+      transform: rotate(0deg)
+
+    &.is-open
+      i
+        transform: rotate(180deg)
+
   .content--info
     display: flex
     flex-direction: column

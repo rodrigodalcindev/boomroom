@@ -1,5 +1,5 @@
-// audio.js playlist
 $(function() {
+  // audio.js playlist
   // Setup the player to autoplay the next track
   var a = audiojs.createAll({
     trackEnded: function() {
@@ -25,5 +25,16 @@ $(function() {
     $(this).addClass('playing').siblings().removeClass('playing');
     audio.load($('a', this).attr('data-src'));
     audio.play();
+  });
+
+  // accordions
+  $('.content--info').find('.wrapper-trigger').on('click', function(e) {
+    //Expand or collapse this panel
+    $(this).next().slideToggle();
+    $(this).parent().toggleClass('is-open');
+
+    //Hide the other panels
+    $('.wrapper').not($(this).next()).slideUp();
+    $('.wrapper').not($(this).next()).parent().removeClass('is-open');
   });
 });

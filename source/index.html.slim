@@ -8,8 +8,10 @@ title: Boom Room Studios
       img.dib.vam.mrm alt="🎛" class="emoji" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAXVBMVEVHcEzFytZOXmfm6+/M1NrP2d3R197CyNLP2NzP1trP2N3b4ua/xc/T2eBARFDj6eozMT9LVF+lrbTb69C3vcTC6Yio5z2TmKFqanaCipPQ6q////9yf4iy6Fv3+Pl/jLwkAAAACnRSTlMAg///tX9N78AjC90srQAABHhJREFUWMPVWIuSozgM3DOZ3R0/JOM4AQPJ/3/mysKADWamKrmr2lOqMkxs2m3Jkhp+/Pgr7fPj8vtlu3x8Ljg/5Zv2M/GJ10a9aCbePXP6oCvVvGyKbv9goMtbOIx0YaDf0jRvmZG/EpB6D0jpE6Db4/rVfdfHrfxBHoGujPC4D/SNGvcQOMSfhvtjm8tbOwLd7zzKX27ye6DbnblcI9z1fsdzRrfHxkIHedzUsP2zbdDUfaScNF5XvcOraNd1Tn3jI/qxt/Y5OgsdVqE6sBbAAmZHpmR05VARQisISIAVNBWdW3d9I2TTWhDR9DjGEd3JAxA7srMtzYpAQgCoRk1TYosxDgpmGDGNo7ZdDIg7AMXQesZJQAIELbk6fCDCvZ1xBI7PFqxv0GPVR+28YAJqrSsd5BecjjYGLbR4EjWdJiYgolQ4HPu0MZrQxE1afxK1kCZKFcRMqchmnDcuRFBPngoBj4xudNSWFbWc5gtakk4VH0WKmVx2pmUHERN6RaeqBKID3zQiAYWQ7rAOPceFYjpsLpr87EygExImc85IJKcTIzUzwshocWEc501Cbw6MCh+t8+0aT6SPWnxEI3MwgqlHbeWeDIQswiZgt4439aiptpxpXZn/rlwI2nTj4WSj28jPhKjXZCdbCVsQclJVTnbMNdVlSBa0NEWuoQbIcDpparkWsx9lZyE50raEs2U/xuxXesl+yrSOupjk7K/UIyV9z/WG6pGsdCkjUz2yveduiGcVEqXULoTOxy6OtRYmfReC03l3rlZIVIsyqDe7udeXy5zUbCRhQOLgtK3N4/hdzX6pZf9bQP8jRsMNvxQfTn/LCHETEU0FjSfqKWxz64zwwcLgyqLjdh/2OJp1BfqYFyqsvdicAS3S4wQokQvhCzXCdJX2XNAqastwFnkdb9jOZM1HpBJaSwZTXY8QKYjjItcYJSO8RQYa5jpCZYKZD+v2+ArDOgyaA6jqIsJb2ApXj5ksYxGB/Vb4YutPIqJkdCVGEvKibUMUM5usieIpr8QgG+NM1Uc9lF1if/DG0WRQ0J9FTRa1P5u5dJHnOI7+uNCBUbfray2UhQrAE9IzrAuFCiPWUcvOptA5Tx9Kqlla8x9JxVrI8SndylgRyF5EPDIgyoGRTePA0hqTiGiBDpjUa+NTBxGBUTWvQE6rJ5vEJK0HalYsIgiq71dGpnF0Mg8+mmCN7GxW504ycyza9YzAdNL7197ezkbNPS8luEiDdtUGJ2rEwE5EdKUa2UWVTqSqMaIM6EoRAfFJNysM5UKx+StzYMThMVkuxWSSZi06lGuoslQkvj09s3CBKhkNFGCkJ5HFDwD0cLOVQXzQg5NxkDQGLdNTM/ZcbXY+4poWRQLHy/bU3jErzHxlNGuM+FTTbSKi1kWo87upF32IKuFY/dFIHWh4crk4qPa1VSRUxUimMbKbTvqaMia+mMBTDUHjxqj/ttO++QJBJ6C3X2ksQB/RJW/h6Ev+2se8ZFJH+8xeROk37J/s1div1+3y+Xe+8PsD5aKE8B3yh/8AAAAASUVORK5CYII="
       span.dib.vam
         | Boom Room Studios
-    section.bio.mtl
-      h1.pbxxs
+    section.bio.mtl.is-open
+      h1.pbxxs.wrapper-trigger
+        span.mrs
+          i.fa.fa-caret-down aria-hidden="true"
         | Bio
       .wrapper.ptm
         p
@@ -24,9 +26,11 @@ title: Boom Room Studios
         p
           | Cheers!
     section.tracks.mtl
-      h1.pbxxs
+      h1.pbxxs.wrapper-trigger
+        span.mrs
+          i.fa.fa-caret-down aria-hidden="true"
         | Demo Tracks
-      .wrapper.ptm
+      .wrapper.ptm.dn
         audio preload="" src="/media/bat_shake.mp3"
         ol
           li
@@ -46,9 +50,11 @@ title: Boom Room Studios
           li
             = link_to "Track Name", "#", :data => { :src => '/media/tree_sap.mp3' }
     section.contact.mtl
-      h1.pbxxs
+      h1.pbxxs.wrapper-trigger
+        span.mrs
+          i.fa.fa-caret-down aria-hidden="true"
         | Contact
-      .wrapper.ptm
+      .wrapper.ptm.dn
         p
           | 8080, Main St. - H1H1H1
         p
