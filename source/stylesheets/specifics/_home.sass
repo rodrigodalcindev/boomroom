@@ -12,16 +12,34 @@
     h1
       cursor: pointer
 
-    i
-      transition: transform 0.75 ease-in
-      transform: rotate(0deg)
+      i
+        transition: transform 0.75 ease-in
+        transform: rotate(0deg)
 
     &.is-open
-      i
-        transform: rotate(180deg)
+      h1
+        i
+          transform: rotate(180deg)
 
   .content--info
     display: flex
     flex-direction: column
     justify-content: center
     margin-left: 50%
+
+  .tracks
+    ol
+      max-width: rem(300)
+      width: 100%
+
+    li
+      border-bottom: rem(2) solid $eggshell
+      cursor: pointer
+      line-height: rem(50)
+
+      &.playing
+        .fa-pause
+          display: inline
+
+        .fa-play
+          display: none

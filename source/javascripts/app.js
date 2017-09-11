@@ -10,21 +10,29 @@ $(function() {
       audio.play();
     },
     imageLocation: 'javascripts/vendor/audiojs/player-graphics.gif',
-    swfLocation: 'javascripts/vendor/audiojs/audiojs.swf'
+    swfLocation: 'javascripts/vendor/audiojs/audiojs.swf',
+    css: false
   });
 
   // Load in the first track
   var audio = a[0];
       first = $('ol a').attr('data-src');
-  $('ol li').first().addClass('playing');
   audio.load(first);
 
   // Load in a track on click
-  $('ol li').click(function(e) {
+  $('ol li').on('click', function(e) {
     e.preventDefault();
-    $(this).addClass('playing').siblings().removeClass('playing');
-    audio.load($('a', this).attr('data-src'));
-    audio.play();
+
+    if($(this).hasClass('playing')) {
+      audio.pause();
+      $(this).removeClass('playing');
+    } else {
+      $(this).addClass('playing').siblings().removeClass('playing');
+      audio.load($('a', this).attr('data-src'));
+      elIdx = $(this).index() + 1;
+      $('.audiojs').css('top',(elIdx*50 + ($(this).index()*2)) + 'px');
+      audio.play();
+    }
   });
 
   // accordions
