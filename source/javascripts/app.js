@@ -7,6 +7,8 @@ $(function() {
       if (!next.length) next = $('ol li').first();
       next.addClass('playing').siblings().removeClass('playing');
       audio.load($('a', next).attr('data-src'));
+      elIdx = next.index() + 1;
+      $('.audiojs').css('top',(elIdx*50 + (next.index()*2)) + 'px');
       audio.play();
     },
     imageLocation: 'javascripts/vendor/audiojs/player-graphics.gif',
