@@ -14,6 +14,9 @@ h1
   font-size: rem(24)
   letter-spacing: rem(-0.5)
 
+  @include respond-to("bp--0")
+    font-size: rem(18)
+
 p
   font-size: rem(16)
   letter-spacing: rem(-0.1)
@@ -26,3 +29,17 @@ p
     font-size: rem(42)
     font-weight: $font-weight-bold
     letter-spacing: rem(-0.88)
+
+  @include respond-to("bp--2")
+    img
+      width: rem(50)
+    span
+      font-size: rem(32)
+
+  @include respond-to("bp--0")
+    img
+      margin-right: $b-space-xs
+      width: rem(40)
+
+    span
+      font-size: rem(24)

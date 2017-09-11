@@ -1,31 +1,59 @@
 .s-home--container
   height: 100vh
 
-  div[class*="content"]
-    height: 100%
-    width: 50%
-
   section
     max-width: rem(660)
     width: 100%
 
-    h1
+    .wrapper-trigger
       cursor: pointer
 
       i
         transition: transform 0.75 ease-in
         transform: rotate(0deg)
 
+      @include respond-to("bp--0")
+        span
+          margin-right: $b-space-xs
+
     &.is-open
-      h1
+      .wrapper-trigger
         i
           transform: rotate(180deg)
+
+  .content--img,
+  .content--info
+    height: 100%
+
+  .content--img
+    background: $eggshell url('/images/zaman-brandon-full-overlay.jpg') no-repeat top 25% center
+    background-size: cover
+    left: 0
+    top: 0
+    width: 100%
+    z-index: $stratum-bottom
+
+    @include respond-to("bp--1")
+      height: 50%
+      position: static
 
   .content--info
     display: flex
     flex-direction: column
     justify-content: center
     margin-left: 50%
+    width: 50%
+
+    @include respond-to("bp--1")
+      display: block
+      height: auto
+      margin: 0
+      padding: $b-space
+      width: 100%
+
+  .wrapper
+    @include respond-to("bp--0")
+      margin-top: $b-space-xxs
 
   .tracks
     ol
@@ -43,3 +71,6 @@
 
         .fa-play
           display: none
+
+      @include respond-to("bp--1")
+        border-color: $slate
